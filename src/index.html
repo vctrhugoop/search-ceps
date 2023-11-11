@@ -8,9 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles/global.css" />
   </head>
-  <body class="bg-zinc-800">
+  <body class="h-screen bg-zinc-800">
     <div
-      class="container flex min-h-screen flex-col items-center justify-center gap-7"
+      class="container m-auto flex min-h-screen flex-col items-center justify-center gap-7"
     >
       <div class="title">
         <h1 class="text-5xl font-bold uppercase text-zinc-100">Search Cep</h1>
@@ -19,29 +19,33 @@
         <section
           class="form-wrapper flex h-[100px] w-[360px] flex-col items-center justify-center rounded bg-emerald-700 shadow-md"
         >
-          <form class="form" role="search">
+          <form class="form relative flex items-center" role="search">
             <input
-              class="h-9 rounded p-2 text-zinc-950 outline-emerald-400 placeholder:text-zinc-400"
+              class="h-9 rounded px-2 text-zinc-950 outline-emerald-400 placeholder:text-zinc-400"
               type="text"
               name="search"
               placeholder="Enter the zip code..."
               aria-label="Search"
               id="zip-code-search"
             />
+            <i
+              class="absolute left-40 ml-2 text-zinc-400"
+              data-lucide="map-pin"
+            ></i>
             <button
-              class="ml-2 h-9 transform rounded bg-zinc-900 px-2 uppercase text-zinc-50 transition ease-in-out hover:scale-[1.1] hover:bg-zinc-700"
+              class="ml-2 flex h-9 w-10 transform items-center justify-center rounded bg-zinc-900 uppercase text-zinc-50 transition ease-in-out"
               id="btn-search"
             >
-              search
+              <i data-lucide="search"></i>
             </button>
           </form>
         </section>
       </div>
       <div class="data-wrapper hidden">
         <section
-          class="flex h-max w-[320px] flex-col justify-start rounded bg-emerald-700 shadow-md"
+          class="flex h-max w-[360px] flex-col justify-start rounded bg-emerald-700 shadow-md"
         >
-          <div class="card p-5 text-zinc-50">
+          <div class="card m-auto w-max p-5 text-zinc-50">
             <h1 class="text-center text-xl font-semibold uppercase">
               Date Obtained
             </h1>
@@ -60,5 +64,9 @@
       </div>
     </div>
     <script src="./scripts/main.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>

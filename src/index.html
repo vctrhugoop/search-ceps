@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles/global.css" />
   </head>
-  <body class="h-screen bg-zinc-800">
+  <body class="h-screen bg-zinc-900">
     <div
       class="container m-auto flex min-h-screen flex-col items-center justify-center gap-7"
     >
@@ -18,18 +18,18 @@
       </div>
       <div class="search-wrapper">
         <section
-          class="form-wrapper flex h-[100px] w-[360px] flex-col items-center justify-center rounded border-t-8 border-emerald-700 bg-zinc-50 shadow-md"
+          class="form-wrapper flex h-[100px] w-[360px] flex-col items-center justify-center rounded border-t-8 border-emerald-700 bg-zinc-800 shadow-md"
         >
           <form class="form relative flex items-center" role="search">
             <input
-              class="h-9 rounded border-2 border-emerald-700 px-9 text-zinc-950 outline-none placeholder:text-zinc-400"
+              class="h-9 rounded bg-zinc-800 px-9 text-zinc-50 outline-none ring-1 ring-emerald-700 placeholder:text-zinc-50"
               type="text"
               name="search"
               placeholder="Enter the zip code..."
               aria-label="Search"
               id="zip-code-search"
             />
-            <i class="absolute ml-2 text-zinc-500" data-lucide="map-pin"></i>
+            <i class="absolute ml-2 text-zinc-50" data-lucide="map-pin"></i>
             <button
               class="bg-emerald-00 ml-2 flex h-9 w-10 transform items-center justify-center rounded bg-emerald-700 uppercase text-zinc-50 transition ease-in-out"
               id="btn-search"
@@ -41,23 +41,26 @@
       </div>
       <div class="data-wrapper hidden">
         <section
-          class="flex h-max w-[360px] flex-col gap-4 rounded border-t-8 border-emerald-700 bg-zinc-200 p-4 shadow-md"
+          class="flex h-max w-[360px] flex-col gap-4 rounded border-t-8 border-emerald-700 bg-zinc-800 p-4 shadow-md"
         >
           <div
-            class="card m-auto flex w-full flex-col items-start font-semibold text-zinc-500"
+            class="card m-auto flex w-full flex-col items-start font-normal text-emerald-400"
           >
             <p>Logradouro</p>
             <p
-              class="text font-normal capitalize text-zinc-800"
+              class="text mb-3 font-normal capitalize text-zinc-50"
               id="street"
             ></p>
             <p>Bairro/Distrito</p>
             <p
-              class="text font-normal capitalize text-zinc-800"
+              class="text mb-3 font-normal capitalize text-zinc-50"
               id="district"
             ></p>
             <p>Cidade/UF</p>
-            <p class="text font-normal capitalize text-zinc-800" id="city"></p>
+            <p
+              class="text mb-3 font-normal capitalize text-zinc-50"
+              id="city"
+            ></p>
           </div>
         </section>
       </div>

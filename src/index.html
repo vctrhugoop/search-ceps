@@ -14,24 +14,24 @@
       class="container m-auto flex min-h-screen flex-col items-center justify-center gap-7"
     >
       <div class="title">
-        <h1 class="text-5xl font-bold uppercase text-zinc-100">Search Cep</h1>
+        <h1 class="text-3xl font-semibold text-zinc-100">Busca Cep</h1>
       </div>
       <div class="search-wrapper">
         <section
-          class="form-wrapper flex h-[100px] w-[360px] flex-col items-center justify-center rounded bg-emerald-700 shadow-md"
+          class="form-wrapper flex h-[100px] w-[360px] flex-col items-center justify-center rounded border-t-8 border-emerald-700 bg-zinc-50 shadow-md"
         >
           <form class="form relative flex items-center" role="search">
             <input
-              class="h-9 rounded px-9 text-zinc-950 outline-emerald-400 placeholder:text-zinc-400"
+              class="h-9 rounded border-2 border-emerald-700 px-9 text-zinc-950 outline-none placeholder:text-zinc-400"
               type="text"
               name="search"
               placeholder="Enter the zip code..."
               aria-label="Search"
               id="zip-code-search"
             />
-            <i class="absolute ml-2 text-zinc-400" data-lucide="map-pin"></i>
+            <i class="absolute ml-2 text-zinc-500" data-lucide="map-pin"></i>
             <button
-              class="ml-2 flex h-9 w-10 transform items-center justify-center rounded bg-zinc-900 uppercase text-zinc-50 transition ease-in-out"
+              class="bg-emerald-00 ml-2 flex h-9 w-10 transform items-center justify-center rounded bg-emerald-700 uppercase text-zinc-50 transition ease-in-out"
               id="btn-search"
             >
               <i data-lucide="search"></i>
@@ -41,35 +41,23 @@
       </div>
       <div class="data-wrapper hidden">
         <section
-          class="flex h-max w-[360px] flex-col gap-4 rounded bg-emerald-700 p-4 shadow-md"
+          class="flex h-max w-[360px] flex-col gap-4 rounded border-t-8 border-emerald-700 bg-zinc-200 p-4 shadow-md"
         >
-          <h1 class="text-center text-xl font-bold uppercase text-zinc-50">
-            Date Obtained
-          </h1>
           <div
-            class="card m-auto flex w-full flex-col items-start gap-3 font-semibold uppercase text-zinc-900"
+            class="card m-auto flex w-full flex-col items-start font-semibold text-zinc-500"
           >
-            <p>
-              Street:
-              <span
-                class="text font-normal capitalize text-zinc-50"
-                id="street"
-              ></span>
-            </p>
-            <p>
-              City:
-              <span
-                class="font-normal capitalize text-zinc-50"
-                id="city"
-              ></span>
-            </p>
-            <p>
-              District:
-              <span
-                class="font-normal capitalize text-zinc-50"
-                id="district"
-              ></span>
-            </p>
+            <p>Logradouro</p>
+            <p
+              class="text font-normal capitalize text-zinc-800"
+              id="street"
+            ></p>
+            <p>Bairro/Distrito</p>
+            <p
+              class="text font-normal capitalize text-zinc-800"
+              id="district"
+            ></p>
+            <p>Cidade/UF</p>
+            <p class="text font-normal capitalize text-zinc-800" id="city"></p>
           </div>
         </section>
       </div>

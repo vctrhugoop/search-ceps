@@ -29,7 +29,7 @@ Projeto desenvolvido para estudo, onde coloquei em prática meus conhecimentos d
 - Consumo de API
 - Manipulação da DOM
 
-Trata-se de uma aplicação simples onde mostra endereço, bairro e cidade do cep pesquisado. Foi meu primeiro contato com o consumo de api e utilizando ferramentas como Vite e para estilizar o Tailwind CSS.
+Trata-se de uma aplicação simples onde mostra endereço, bairro e cidade do cep pesquisado. Foi meu primeiro contato com o consumo de api e utilizando ferramentas como Vite e para estilizar o Tailwind CSS, isso tudo ainda no vanillaJS.
 
 ## 🚀 Deploy
 

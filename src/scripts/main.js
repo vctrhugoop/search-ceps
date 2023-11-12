@@ -13,7 +13,7 @@ function getData(data) {
       console.log(data);
 
       street.innerHTML = data.logradouro;
-      city.innerHTML = data.localidade + " - " + data.uf;
+      city.innerHTML = data.localidade + "/" + data.uf;
       district.innerHTML = data.bairro;
     })
     .catch((err) => {
